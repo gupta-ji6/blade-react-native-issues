@@ -1,5 +1,5 @@
 {
-  "name": "BladeRNIssues",
+  "name": "blade-react-native-issues",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,8 +10,17 @@
     "test": "jest"
   },
   "dependencies": {
+    "@floating-ui/react": "0.26.1",
+    "@floating-ui/react-native": "^0.10.1",
+    "@gorhom/bottom-sheet": "4.5.1",
+    "@gorhom/portal": "1.0.14",
+    "@razorpay/blade": "10.14.7",
     "react": "18.2.0",
-    "react-native": "0.72.6"
+    "react-native": "0.72.6",
+    "react-native-gesture-handler": "2.13.4",
+    "react-native-reanimated": "3.5.4",
+    "react-native-svg": "^13.14.0",
+    "styled-components": "5.3.6"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

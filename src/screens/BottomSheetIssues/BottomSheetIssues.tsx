@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import SimSelectionBottomSheet from './SimSelectionBottomSheet';
 import {ArrowRightIcon, Button, Text, Box} from '@razorpay/blade/components';
 
@@ -9,6 +9,15 @@ const BottomSheetRadioIssue = () => {
   const [isSimVerificationLoading, setIsSimVerificationLoading] =
     useState(false);
   const [selectedNumber, setSelectedNumber] = useState('');
+
+  // useEffect(() => {
+  // FIXME: setting this as true on render also doesn't work to let it open on navigation
+  // setIsSimSelectionBottomSheetOpen(true);
+  // FIXME: This works on RN to open the bottomsheet by default after navigating to a screen.
+  // setTimeout(() => {
+  //   setIsSimSelectionBottomSheetOpen(true);
+  // }, 1000);
+  // }, []);
 
   const handleSimSelectionDismiss = () => {
     if (isSimSelectionBottomSheetOpen) {
@@ -23,6 +32,7 @@ const BottomSheetRadioIssue = () => {
   };
 
   const handleSimVerification = (selectedPhoneNumber: string) => {
+    // FIXME: `selectedPhoneNumber` is undefined here, works fine on web
     console.log(
       'BottomSheetRadioIssue: handleSimVerification -> selectedPhoneNumber=',
       selectedPhoneNumber,
@@ -50,9 +60,7 @@ const BottomSheetRadioIssue = () => {
         Selected Phone Number: {selectedNumber}
       </Text>
 
-      {/* FIXME: If I pass isOpen={true} to open it on mount/navigation, it doesn't work. Works fine on web.
-        We had to add a useEffect on render to make it true with setTimeout(() => {}, 1);
-      */}
+      {/* FIXME: If I pass isOpen={true} to open it on mount/navigation, it doesn't work. Works fine on web. */}
       <SimSelectionBottomSheet
         isOpen={isSimSelectionBottomSheetOpen}
         isCtaLoading={isSimVerificationLoading}

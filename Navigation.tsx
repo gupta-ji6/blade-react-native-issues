@@ -2,8 +2,9 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from './src/screens/HomeScreen';
-import DetailsScreen from './src/screens/DetailsScreen';
-import BottomSheetRadioIssue from './src/screens/BottomSheetRadioIssue/BottomSheetRadioIssue';
+import DividerIssue from './src/screens/DividerIssue';
+import BottomSheetIssues from './src/screens/BottomSheetIssues/BottomSheetIssues';
+import TestInputPrefixIssue from './src/screens/TestInputPrefixIssue';
 
 const Stack = createNativeStackNavigator();
 
@@ -12,10 +13,11 @@ const Navigation = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="DividerIssue" component={DividerIssue} />
+        <Stack.Screen name="BottomSheetIssues" component={BottomSheetIssues} />
         <Stack.Screen
-          name="BottomSheetRadioIssue"
-          component={BottomSheetRadioIssue}
+          name="TestInputPrefixIssue"
+          component={TestInputPrefixIssue}
         />
       </Stack.Navigator>
     </NavigationContainer>

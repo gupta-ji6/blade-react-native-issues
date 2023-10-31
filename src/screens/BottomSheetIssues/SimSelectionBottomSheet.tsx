@@ -28,26 +28,14 @@ const SimSelectionBottomSheet: React.FC<Props> = ({
   phoneNumbers = [],
   onDismiss,
 }) => {
-  const [isCtaDisabled, setIsCtaDisabled] = useState(false); // TODO: check why true value is not working, ideally it should be true
+  // FIXME: ideally it should be true by default, but the button doesn't re-render it's loading state when one radio is selected
+  const [isCtaDisabled, setIsCtaDisabled] = useState(false);
   const [selectedPhoneNumber, setSelectedPhoneNumber] = useState<
     string | undefined
   >(undefined);
   const [simSelectionError, setSimSelectionError] = useState<
     string | undefined
   >(undefined);
-
-  console.log('SimSelectionBottomSheet', {
-    selectedPhoneNumber,
-    simSelectionError,
-    isCtaDisabled,
-  });
-
-  // useEffect(() => {
-  //   if (selectedPhoneNumber !== undefined && selectedPhoneNumber.length > 0) {
-  //     setSimSelectionError(undefined);
-  //     setIsCtaDisabled(false);
-  //   }
-  // }, [selectedPhoneNumber]);
 
   const handleSimChange = ({value}: {value: string}): void => {
     console.log('SimSelectionBottomSheet - handleSimChange -> value =', value);
@@ -100,9 +88,10 @@ const SimSelectionBottomSheet: React.FC<Props> = ({
         <BottomSheetFooter>
           <Box
             display="flex"
-            flexDirection="row"
+            flexDirection="column"
             alignItems="center"
-            justifyContent="space-between">
+            justifyContent="space-between"
+            gap="spacing.4">
             <Button
               icon={ArrowRightIcon}
               iconPosition="right"
@@ -111,6 +100,10 @@ const SimSelectionBottomSheet: React.FC<Props> = ({
               isFullWidth
               onClick={handleCtaClick}>
               Verify
+            </Button>
+            {/* FIXME: Clicking on Close button doesn't close bottomsheet, it works on web */}
+            <Button onClick={onDismiss} variant="secondary" isFullWidth>
+              Close
             </Button>
           </Box>
         </BottomSheetFooter>

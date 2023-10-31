@@ -1226,7 +1226,7 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.52.0.tgz#78fe5f117840f69dc4a353adf9b9cd926353378c"
   integrity sha512-mjZVbpaeMZludF2fsWLD0Z9gCref1Tk4i9+wddjRvpUNqqcndPkBD09N/Mapey0b3jaXbLm2kICwFv2E64QinA==
 
-"@floating-ui/core@^1.2.6", "@floating-ui/core@^1.3.0", "@floating-ui/core@^1.4.2":
+"@floating-ui/core@^1.3.0", "@floating-ui/core@^1.4.2":
   version "1.5.0"
   resolved "https://registry.npmjs.org/@floating-ui/core/-/core-1.5.0.tgz#5c05c60d5ae2d05101c3021c1a2a350ddc027f8c"
   integrity sha512-kK1h4m36DQ0UHGj5Ah4db7R0rHemTqqO0QLvUqi1/mUUp3LuAWbWxdxSIf/XsnH9VS6rRVPLJCncjRzUvyCLXg==
@@ -1241,19 +1241,12 @@
     "@floating-ui/core" "^1.4.2"
     "@floating-ui/utils" "^0.1.3"
 
-"@floating-ui/react-dom@^2.0.0", "@floating-ui/react-dom@^2.0.2":
+"@floating-ui/react-dom@^2.0.2":
   version "2.0.2"
   resolved "https://registry.npmjs.org/@floating-ui/react-dom/-/react-dom-2.0.2.tgz#fab244d64db08e6bed7be4b5fcce65315ef44d20"
   integrity sha512-5qhlDvjaLmAst/rKb3VdlCinwTF4EYMiVxuuc/HVUjs46W0zgtbMmAZ1UTsDrRTxRmUEzl92mOtWbeeXL26lSQ==
   dependencies:
     "@floating-ui/dom" "^1.5.1"
-
-"@floating-ui/react-native@0.10.0":
-  version "0.10.0"
-  resolved "https://registry.npmjs.org/@floating-ui/react-native/-/react-native-0.10.0.tgz#bcef1365c389b17c81ccc12f688766fddd5beb13"
-  integrity sha512-hjjVjXr19b1kzEAVq+iGNbNFc9/WmmE/QpJtZAFGrLsQVnd1Tuv+VEBesKHfWnKO5oF7QBAkwFxn5iys5aOC2w==
-  dependencies:
-    "@floating-ui/core" "^1.2.6"
 
 "@floating-ui/react-native@0.10.1":
   version "0.10.1"
@@ -1262,13 +1255,13 @@
   dependencies:
     "@floating-ui/core" "^1.3.0"
 
-"@floating-ui/react@0.24.2":
-  version "0.24.2"
-  resolved "https://registry.npmjs.org/@floating-ui/react/-/react-0.24.2.tgz#1f2e596da122341a3fa65667a6f26ed126d32cc0"
-  integrity sha512-8sdLmcC85J6M2H0AL8yOQuiWD4T0gNMSLpuJjmXyEA6ndfmxXR0hwKFkczB4xRNFhKbwoQeuh8z561HE2vOdZw==
+"@floating-ui/react@0.25.4":
+  version "0.25.4"
+  resolved "https://registry.npmjs.org/@floating-ui/react/-/react-0.25.4.tgz#82507e14460aee70f435ad2fd717ea182b6d5c61"
+  integrity sha512-lWRQ/UiTvSIBxohn0/2HFHEmnmOVRjl7j6XcRJuLH0ls6f/9AyHMWVzkAJFuwx0n9gaEeCmg9VccCSCJzbEJig==
   dependencies:
-    "@floating-ui/react-dom" "^2.0.0"
-    aria-hidden "^1.1.3"
+    "@floating-ui/react-dom" "^2.0.2"
+    "@floating-ui/utils" "^0.1.1"
     tabbable "^6.0.1"
 
 "@floating-ui/react@0.26.1":
@@ -1280,7 +1273,7 @@
     "@floating-ui/utils" "^0.1.5"
     tabbable "^6.0.1"
 
-"@floating-ui/utils@^0.1.3", "@floating-ui/utils@^0.1.5":
+"@floating-ui/utils@^0.1.1", "@floating-ui/utils@^0.1.3", "@floating-ui/utils@^0.1.5":
   version "0.1.6"
   resolved "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.1.6.tgz#22958c042e10b67463997bd6ea7115fe28cbcaf9"
   integrity sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==
@@ -1636,18 +1629,19 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@razorpay/blade@10.14.7":
-  version "10.14.7"
-  resolved "https://npm.pkg.github.com/download/@razorpay/blade/10.14.7/2aac800aadd879c43bf21ee26a0d8dadf5d82d53#2aac800aadd879c43bf21ee26a0d8dadf5d82d53"
-  integrity sha512-GmX8yIAUI9M9GbxfWsjnXYG0Db/gwNq9a9Y+hHnLvQQFLHuTsPqUEWg4ngE3NE+0HP4bHk5g9At1q0jWjK1nyQ==
+"@razorpay/blade@https://pkg.csb.dev/razorpay/blade/commit/48ed1c83/@razorpay/blade":
+  version "10.17.0"
+  resolved "https://pkg.csb.dev/razorpay/blade/commit/48ed1c83/@razorpay/blade#4a5f523ffe725ab47a9c3d58ea115bc22092152f"
   dependencies:
     "@babel/runtime" "7.20.0"
-    "@floating-ui/react" "0.24.2"
-    "@floating-ui/react-native" "0.10.0"
+    "@floating-ui/react" "0.25.4"
+    "@floating-ui/react-native" "0.10.1"
     "@types/body-scroll-lock" "3.1.0"
     "@use-gesture/react" "10.2.24"
     body-scroll-lock "4.0.0-beta.0"
     patch-package "7.0.0"
+    react-native-pager-view "6.2.1"
+    react-native-tab-view "3.5.2"
     tinycolor2 "1.6.0"
     use-presence "1.1.0"
 
@@ -2333,13 +2327,6 @@ argparse@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
   integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
-
-aria-hidden@^1.1.3:
-  version "1.2.3"
-  resolved "https://registry.npmjs.org/aria-hidden/-/aria-hidden-1.2.3.tgz#14aeb7fb692bbb72d69bebfa47279c1fd725e954"
-  integrity sha512-xcLxITLe2HYa1cnYnwCjkOO1PqUHQpozB8x9AR0OgWN2woOBi5kSDVxKfd0b7sb1hw5qFeJhXm9H1nu3xSfLeQ==
-  dependencies:
-    tslib "^2.0.0"
 
 array-buffer-byte-length@^1.0.0:
   version "1.0.0"
@@ -5914,6 +5901,11 @@ react-native-gesture-handler@2.13.4:
     lodash "^4.17.21"
     prop-types "^15.7.2"
 
+react-native-pager-view@6.2.1:
+  version "6.2.1"
+  resolved "https://registry.npmjs.org/react-native-pager-view/-/react-native-pager-view-6.2.1.tgz#985d21bbb7d7bc012f4c142dedbb98ce4bdea104"
+  integrity sha512-fZ8chez5J+w831nSnbtK8hwlCiMy1DgpFv8xG6ajXLsAI8uMkGvP554QDIDNlUoCuVwMf7OFyd32Y2Nm2Iaj9Q==
+
 react-native-reanimated@3.5.4:
   version "3.5.4"
   resolved "https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-3.5.4.tgz#a6c2b0c43b6dad246f5d276213974afedb8e3fc7"
@@ -5944,6 +5936,13 @@ react-native-svg@13.14.0:
   dependencies:
     css-select "^5.1.0"
     css-tree "^1.1.3"
+
+react-native-tab-view@3.5.2:
+  version "3.5.2"
+  resolved "https://registry.npmjs.org/react-native-tab-view/-/react-native-tab-view-3.5.2.tgz#2789b8af6148b16835869566bf13dc3b0e6c1b46"
+  integrity sha512-nE5WqjbeEPsWQx4mtz81QGVvgHRhujTNIIZiMCx3Bj6CBFDafbk7XZp9ocmtzXUQaZ4bhtVS43R4FIiR4LboJw==
+  dependencies:
+    use-latest-callback "^0.1.5"
 
 react-native@0.72.6:
   version "0.72.6"
@@ -6894,7 +6893,7 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-use-latest-callback@^0.1.7:
+use-latest-callback@^0.1.5, use-latest-callback@^0.1.7:
   version "0.1.7"
   resolved "https://registry.npmjs.org/use-latest-callback/-/use-latest-callback-0.1.7.tgz#f189fa4e58ee18c7a2d9de53f92210e118d1b14f"
   integrity sha512-Hlrl0lskgZZpo2vIpZ4rA7qA/rAGn2PcDvDH1M47AogqMPB0qlGEdsa66AVkIUiEEDpfxA9/N6hY6MqtaNoqWA==

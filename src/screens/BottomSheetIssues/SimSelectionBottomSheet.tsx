@@ -29,7 +29,7 @@ const SimSelectionBottomSheet: React.FC<Props> = ({
   onDismiss,
 }) => {
   // FIXME: ideally it should be true by default, but the button doesn't re-render it's loading state when one radio is selected
-  const [isCtaDisabled, setIsCtaDisabled] = useState(false);
+  const [isCtaDisabled, setIsCtaDisabled] = useState(true);
   const [selectedPhoneNumber, setSelectedPhoneNumber] = useState<
     string | undefined
   >(undefined);

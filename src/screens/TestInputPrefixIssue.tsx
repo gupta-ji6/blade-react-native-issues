@@ -9,9 +9,9 @@ function TestInputPrefixIssue() {
       alignItems={'center'}
       paddingX={'spacing.9'}>
       <Heading
-        color="feedback.negative.action.text.primary.default.lowContrast"
+        color="feedback.positive.action.text.primary.default.lowContrast"
         marginBottom={'spacing.6'}>
-        Prefix is not centered with input
+        Prefix is not centered with input ✅
       </Heading>
       <TextInput
         prefix="+91"

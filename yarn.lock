@@ -1629,9 +1629,9 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@razorpay/blade@https://pkg.csb.dev/razorpay/blade/commit/48ed1c83/@razorpay/blade":
-  version "10.17.0"
-  resolved "https://pkg.csb.dev/razorpay/blade/commit/48ed1c83/@razorpay/blade#4a5f523ffe725ab47a9c3d58ea115bc22092152f"
+"@razorpay/blade@https://pkg.csb.dev/razorpay/blade/commit/2106707c/@razorpay/blade":
+  version "10.16.0"
+  resolved "https://pkg.csb.dev/razorpay/blade/commit/2106707c/@razorpay/blade#fdc5abf86c68f60292cd2bd53b99c55b04017cde"
   dependencies:
     "@babel/runtime" "7.20.0"
     "@floating-ui/react" "0.25.4"

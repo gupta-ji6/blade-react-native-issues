@@ -5,7 +5,7 @@ import {ArrowRightIcon, Button, Text, Box} from '@razorpay/blade/components';
 const BottomSheetRadioIssue = () => {
   // FIXME: passing default value true here doesn't work on RN
   const [isSimSelectionBottomSheetOpen, setIsSimSelectionBottomSheetOpen] =
-    useState(false);
+    useState(true);
   const [isSimVerificationLoading, setIsSimVerificationLoading] =
     useState(false);
   const [selectedNumber, setSelectedNumber] = useState('');
